@@ -124,54 +124,56 @@ Banned. "I saw your post", "I came across your article", "What stood out to me",
 
 Open on the substance instead. Let them connect it themselves.
 
-## The tell catalogue
+## The tells
 
-The shapes to hunt for when reviewing. Full examples in the section below.
+Seven groups. Read them as a lens rather than a checklist. No single one proves the text came out of a machine. All seven at once does.
 
-**Content.** Inflated significance, as in "a pivotal moment" or "a testament to". Manufactured notability. A superficial analysis clause bolted on with an -ing verb. Promotional adjectives. Vague attribution, as in "experts argue" or "industry reports". Formulaic challenges and future prospects sections at the end.
+**Puffed up importance.** Ordinary events written as history. "A pivotal moment." "A testament to the team's resilience." The event gets a monument instead of a date and a number.
 
-**Language.** The AI vocabulary set, delve, crucial, pivotal, showcase, landscape, tapestry, underscore, fostering, intricate. Copula avoidance, where "serves as" replaces "is". Negative parallelism, "not just X but Y". Rule of three. Synonym cycling, where the same thing is renamed each time to avoid repetition. False ranges, "from X to Y" where X and Y are not on one scale.
+**A borrowed vocabulary.** Delve. Crucial. Pivotal. Showcase. Landscape. Tapestry. Underscore. Foster. Intricate. Each one is harmless on its own. Four of them in a single paragraph is a fingerprint.
 
-**Style.** Em dashes. Mechanical boldface. Bullet lists where every item opens with a bolded label. Title Case Headings. Decorative emoji. Curly quotes.
+**Grammar that dodges.** "Serves as" where "is" would do. "Not just X, but Y." A three item list where two items carry the weight. The same noun renamed three times so it never has to repeat. "From X to Y" where X and Y share no scale.
 
-**Chatbot residue.** Assistant artefacts left in the text, "I hope this helps", "Certainly!", "You're absolutely right". Knowledge cutoff disclaimers. Sycophancy.
+**Formatting that performs.** Em dashes. Bold scattered mid paragraph for emphasis. Bullets where every item opens with a bolded label. Title Case Headings. Emoji used as punctuation. Curly quotes arriving from a word processor. None of it is wrong in isolation. All of it together is a template.
 
-**Filler.** "In order to", "due to the fact that", "it is important to note". Excessive hedging. A generic positive conclusion. Over-hyphenated word pairs.
+**Assistant residue.** "I hope this helps." "Certainly!" "You're absolutely right." A caveat about a training cutoff. Praise that nobody asked for. These are the seams of a chat window left in the cloth.
 
-**Rhetoric and rhythm.** Forced metaphor. Dramatic fragmentation, where a quotable line ends every paragraph. A rhetorical question answered in the next sentence. Sentence opener tics, "So,", "Look,", "Interestingly,", "Ultimately,". Reassurance kickers, "And that's okay".
+**Filler and hedging.** "In order to." "Due to the fact that." "It is important to note." A closing paragraph that lands nowhere. A hyphen between two words that never needed one.
+
+**Rhythm that never breaks.** A metaphor pushed past its usefulness. A quotable line ending every paragraph. A question asked and answered in the next breath. The same opener three times, "So," or "Look," or "Ultimately,". A reassurance pasted on the end, "and that's okay".
 
 ## Before and after
 
-**Significance inflation.**
-Bad. "The launch marked a pivotal moment in the company's ongoing evolution."
-Good. "The launch was in March. Signups doubled by June."
+**Puffed up importance.**
+Bad. "The migration marked a pivotal moment in the platform's evolution."
+Good. "We moved to Postgres in March. Page loads dropped by a third."
 
-**Copula avoidance.**
-Bad. "The library serves as a wrapper around the API."
-Good. "The library wraps the API."
+**Copula dodging.**
+Bad. "The CLI serves as a thin wrapper over the REST API."
+Good. "The CLI wraps the REST API."
 
 **Negative parallelism.**
-Bad. "It is not just a faster database, it is a rethink of how data moves."
-Good. "Queries return in under ten milliseconds. That is roughly six times faster."
+Bad. "It is not just a cache, it is a rethink of how requests move."
+Good. "Requests hit Redis first. That cut database reads by 80 percent."
 
-**Ing clause analysis.**
-Bad. "The team shipped weekly, highlighting the value of tight feedback loops."
-Good. "The team shipped weekly. Bugs were caught within days."
+**Tacked on analysis.**
+Bad. "We shipped daily that quarter, highlighting the value of short feedback loops."
+Good. "We shipped daily that quarter. Regressions surfaced within a day."
 
 **Rule of three.**
-Bad. "Fast, reliable and scalable."
-Good. Name the one that matters and give the number.
+Bad. "Fast, simple and reliable."
+Good. "It answers in 40 milliseconds. That is the only claim worth making."
 
 **Vague attribution.**
-Bad. "Experts agree the approach is sound."
-Good. A named source, or drop the claim.
+Bad. "Engineers broadly agree the pattern does not scale."
+Good. Name the source, or cut the sentence.
 
 **Hedging.**
-Bad. "It is important to note that results may vary considerably."
-Good. "Results vary."
+Bad. "It is worth noting that performance may degrade under heavy load."
+Good. "Performance degrades above 5,000 concurrent connections."
 
-**Prompt leakage.**
-Bad. "I hope this helps! Let me know if you need anything else."
+**Assistant residue.**
+Bad. "I hope this helps! Let me know if you would like more detail."
 Good. Delete it. Sign off, or stop.
 
 ## Self check
@@ -329,8 +331,4 @@ if __name__ == "__main__":
 
 Two things it is built to ignore, because a gate that cries wolf gets switched off. Fenced code blocks, blockquotes and example lines are skipped, so a document can quote the bad writing it bans. And any block can be exempted outright between `<!-- slop-gate: off -->` and the matching `on` marker.
 
-## Attribution
-
-The tell catalogue and the before and after examples are adapted from [blader/humanizer](https://github.com/blader/humanizer) by Siqi Chen, MIT licensed, which in turn draws on [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup and licensed CC BY-SA 4.0. Keep this attribution with the file if you redistribute it.
-
-The rules, the register scale, the self check and the validator are original.
+The end. Ship it, fork it, change it.
