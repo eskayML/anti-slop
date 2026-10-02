@@ -56,7 +56,7 @@ cat draft.txt | python3 slop_check.py - # check a pipe
 python3 slop_check.py --strict email.txt # adds length and evidence rules
 ```
 
-It exits non zero on a hard failure. That means it drops into a commit hook, a CI step, or a send loop that refuses to send.
+It exits non zero on a hard failure. That means a commit hook, a CI step or a send loop can all refuse to proceed.
 
 > [!WARNING]
 > A gate that only checks for dashes and banned vocabulary will pass machine written prose cheerfully. The voice checks are the ones that matter.
